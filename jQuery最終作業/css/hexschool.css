@@ -1,0 +1,312 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*start coding here*/
+a{
+    text-decoration:none;
+    color:black;
+}
+.wrap{
+  width:1002px;
+  margin:auto;
+}
+/*header*/
+.header{
+  height: 86px;
+}
+  /*topbar*/
+.topbar{
+  background:#f6f6f6;
+  display:flex;
+  justify-content:flex-end;
+}
+.topbar a{
+  display:flex;
+  margin:5px;
+}
+.topbar p{
+  margin:0px 3px 0px 3px;
+}
+.facebook{
+  border-right:2px solid #ecdfe3;
+  color:#4460a0;
+}
+  /*title*/
+.title{
+  display:flex;
+  justify-content:space-between;
+}
+.title .hexschoolLogo a{
+  display: block;
+  background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png");
+  width: 224px;
+  height: 50px;
+  text-indent: 101%;
+  overflow:hidden;
+  white-space: nowrap;
+}
+.title .menu{
+  display:flex;
+  align-items:center;
+}
+.menu a{
+  font-size:16px;
+  padding:17px 5px 17px 5px;
+  margin:0px 5px 0px 5px;
+  color:#00f5a8;
+  position: relative;
+  display: block;
+}
+.menu a:hover{
+  padding:17px 5px 15px 5px;
+  border-bottom:2px solid #00f5a8;
+}
+.dropdown ul{
+  display: none;
+  position: absolute;
+  top:51px;
+  left:0;
+  z-index: 100;
+  width: 160px;
+  background: white;
+}
+.dropdown li{
+  padding:10px;
+  border:1px solid darkgreen;
+}
+
+  
+
+/*content*/
+  /*cover*/
+.cover {
+  position:relative;
+  height:346px;
+  font-size:30px;
+  /*background-image:url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);*/
+  margin-bottom:45px;
+}
+.text{
+  position:absolute;
+  left:0px;
+  top:60px;
+  width:1002px;
+  z-index: 50;
+}
+.text h1{
+  padding:5px 0px 5px 15px;
+  background:rgba(0,0,0,0.5);
+  color:white;
+}
+  /*courses*/
+.flexList{
+  display:flex;
+  margin-bottom:45px;
+}
+.flexList .course{
+  margin:0px 10px 45px 10px;
+  width:324px;
+  box-shadow: 0px 5px 5px #dadada;
+}
+.course a{
+  display:flex;
+  padding:15px;
+  flex-direction:column;
+  align-items:center;
+}
+.course a:hover{
+  box-shadow: 0px 5px 5px grey;
+}
+.course .html{
+  width:121px;
+  height:139px;
+}
+.course .rwd{
+  width:227px;
+  height:88px;
+  padding:25.5px 0px 25.5px 0px;
+}
+.course .jQuery{
+  width:114px;
+  height:118px;
+  padding:10.5px 0px 10.5px 0px;
+}
+.course img{
+  margin:10px 0px 10px 0px;
+}
+.course h4{
+  font-size:20px;
+  margin:5px 0px 5px 0px;
+}
+.course{
+  line-height:20px;
+}
+
+.feature{
+  list-style-type:disc;
+}
+
+.featureBox{
+  display:block;
+  width:90%;
+}
+  /*table*/
+.table table{
+  margin:auto;
+  width:830px;
+}
+.table h2{
+  text-align:center;
+  font-size:25px;
+  margin-bottom:20px;
+}
+.table th{
+  font-weight:bold;
+  background:#f7f7f7;
+}
+.table th, .table td{
+  text-align:left;
+  border-top:0.5px solid #eeeeee;
+  border-bottom:1px solid #eeeeee;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:20px;
+}
+.mark{
+  color:#00c178;
+}
+.table{
+  margin-bottom:45px;
+}
+  /*info*/
+.info{
+  background:linear-gradient(#25624b, #429574);
+}
+.text2 h3{
+  text-align:center;
+  font-size:25px;
+  color:white;
+  margin-top:5px;
+}
+.text2{
+  padding:20px 0px 20px 0px;
+}
+form{
+  display:flex;
+  justify-content:space-around;
+}
+textarea{
+  width:440px;
+  height:220px;
+  border-radius:3px;
+}
+label, input{
+  color:white;
+  display:block;
+}
+input{
+  padding:5px;
+  border-radius:6px;
+  width:440px;
+  margin:2px 0px 20px 0px;
+}
+.submitButton{
+  background:#5bca9b;
+  width:60px;
+}
+.submitButton:hover{
+  color:#5bca9b;
+  background:white;
+  cursor: pointer;
+}
+.button{
+  display:flex;
+  justify-content:flex-end;
+}
+.info{
+  margin-bottom:20px;
+}
+
+  /*footer*/
+.footer{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:30px;
+  align-items:center;
+}
+.footerLeft img{
+  margin-left:15px;
+}
+.footerRight a{
+  color:#9f748a;
+}
+.footerRight h6{
+  margin-bottom:5px;
+}
+
+/*topbuttom*/
+.topbutton{
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background:#5bca9b;
+  opacity:0.8;
+  position: fixed;
+  right:10px;
+  bottom:10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+/*swiper*/
+.swiper-container {
+    width: 1002px;
+    height: 346px;
+  }
